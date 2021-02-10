@@ -222,7 +222,7 @@ class PretrainDataset(InMemoryDataset):
         self.data, self.slices = torch.load(self.processed_paths[rank])
     @property
     def processed_file_names(self):
-        return ['ranks_large/pyg_rank{}.pt'.format(i) for i in range(256)]
+        return ['pyg_rank{}.pt'.format(i) for i in range(256)]
     @property
     def raw_file_names(self):
         return ['zinc_chembl_11m_smi']
@@ -285,7 +285,7 @@ if __name__ == "__main__":
                                   mask_edge=0.15),
                          Add_seg()
                          Add_collection_node(num_atom_type=119, bidirection=False)])
-    dataset = PretrainDataset("data/",transform=transform)
+    dataset = PretrainDataset("data/pretraining",transform=transform)
     # # loader = DataLoader(dataset,batch_size=10,shuffle=True)
     # # for i,d in enumerate(loader):
     # #
