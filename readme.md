@@ -29,5 +29,7 @@ bash run_pretraining.sh
 
 > 📋 To train the model, please download the [zinc](http://zinc15.docking.org/) and [ChemBL](https://www.ebi.ac.uk/chembl/) dataset first and put in the `data/raw/` folder.
 
+## Fine-tune
+To fine-tune 
 
 
