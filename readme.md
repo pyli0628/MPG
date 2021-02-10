@@ -1,4 +1,4 @@
-# Learn molecular representations from large-scale unlabeled molecules for drug discovery
+# An effective self-supervised framework for learning expressive molecular global representations to drug discovery
 
 This repository is the official implementation.
 
@@ -27,9 +27,12 @@ Then, run:
 bash run_pretraining.sh
 ```
 
-> 📋 To train the model, please download the [zinc](http://zinc15.docking.org/) and [ChemBL](https://www.ebi.ac.uk/chembl/) dataset first and put in the `data/raw/` folder.
+> 📋 To train the model, please download the [zinc](http://zinc15.docking.org/) and [ChemBL](https://www.ebi.ac.uk/chembl/) dataset first and put in the `data/pretraining/raw/` folder.
 
 ## Fine-tune
-To fine-tune 
-
+To fine-tune the pre-trained model on downstream tasks, please run:
+```finetune
+python finetune.py --dataset toxcast --lr 0.0001 
+```
+> 📋 To finetune the model, please put the datasets in the `data/downstream/` folder.
 
