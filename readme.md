@@ -47,7 +47,7 @@ python property/finetune_regress.py --dataset esol --lr 0.0001 --input_model_fil
 ```finetune
 python DDI/finetune_snap.py --input_model_file pretrained_model/MolGNet.pt
 ```
-**DDI**
+**TWOSIDES**
 ```finetune
 python DDI/finetune_twosides.py --input_model_file pretrained_model/MolGNet.pt
 ```
