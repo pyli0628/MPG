@@ -57,7 +57,7 @@ python CPI/cross_validate.py --dataset human --input_model_file pretrained_model
 ```
 
 ## Evaluation for reproductivity
-Due to the non-deterministic behavior of the function index_select_nd(See [link](https://pytorch.org/docs/stable/notes/randomness.html)) and the randomless of dataset split and,
+Due to the non-deterministic behavior of the function index_select_nd(See [link](https://pytorch.org/docs/stable/notes/randomness.html)) and the randomless of dataset split,
 it is hard to exactly reproduce the training process of finetuning. Therefore, we provide the finetuned model and the splitted datasets
 for thirteen datasets to guarantee the reproducibility of the experiments. Note: these results are fine-tuned in different hardware environments, resulting in slightly difference from reported statistics in the paper.
 
