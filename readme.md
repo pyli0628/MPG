@@ -24,7 +24,7 @@ bash pretraining/run_pretraining.sh
 ```
 > 📋 Here, we provide an input example of unlabelled molecular data at `data/pretraining/raw/little_set_smi`. To train the model on 11 M molecules thoroughly, 
 please download the [complete pre-training dataset](https://drive.google.com/file/d/1Qdf64BnrUK6RjEuNwzhRMdj6lT-QzZYc/view?usp=sharing) first and put it in the `data/pretraining/raw/` folder.
->
+>In consideration of commercial interest， the pre-trained model is not disclosed yet. 
 
 ## Fine-tune
 > 📋 To finetune the model, please download the pretrained models first and put the model in the `pretrained_model/` folder.
